@@ -33,6 +33,11 @@ GitHub上で，行う内容のリポジトリに移動し右下の方にある"H
 
 ### branchを切る
 
+まずは
+
+    % cd <repo-name>  # ディレクトリ<repo-name>に移動
+
+として，作られたディレクトリに移動．（`<repo-name>`には先程cloneしたレポジトリ名が入る）
 以下のコマンドを打つことで，branchが切られる．
 `<branch name>`は自分の名前とかでいいと思う，
 
@@ -60,7 +65,7 @@ branchが切られたことを確認するには次のようにする．
 
 次のコマンドを入力してローカルリポジトリの内容をremoteにpushする．
 
-    % push origin <branch name>  # branch "<branch name>"をremote "origin"にpushする
+    % git push origin <branch name>  # branch "<branch name>"をremote "origin"にpushする
 
 以上までが一連の流れとなる．
 後は，ひたすら課題をこなしてどんどんpushして行きましょう！
