@@ -121,6 +121,10 @@ $ git clone git://github.com/opscode-cookbooks/python.git
 今回の場合はリンク先の通り：<br/>
 https://gist.github.com/amacbee/8296997
 
+なお，ファイルの作成／編集にはviを利用する．<br/>
+viの基本的な使い方はリンク先を参照：<br/>
+http://net-newbie.com/linux/commands/vi.html
+
 更に，`chef-repo`直下に`solo.rb`というファイルを作成し，以下の通り記述する．
 
 ```
