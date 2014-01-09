@@ -58,7 +58,7 @@ $ vagrant up
    - `C:\Users\(ユーザ名)\.vagrant.d\insecure_private_key`を選択
  - OKを押すとログインできる
 
-#### Chefによる初期環境の構築 (proxy環境想定)
+#### Chefによる初期環境の構築 (proxy環境想定 ※非推奨)
 [Chef](http://www.getchef.com/chef/)を用いて，Virtual環境上にNLP用の初期環境を構築する．<br/>
 まずChef本体を導入するために，リンク先からVirtual環境に適したインストール方法でChef本体を導入する：<br/>
 http://www.getchef.com/chef/install/<br/>
@@ -106,10 +106,10 @@ $ mv -v chef-env env
 chef-env -> env
 $ git clone git://github.com/amacbee/chef-mecab.git
 $ mv -v chef-mecab mecab
-mecab -> mecab
+chef-mecab -> mecab
 $ git clone git://github.com/amacbee/chef-cabocha.git
 $ mv -v chef-cabocha cabocha
-cabocha -> cabocha
+chef-cabocha -> cabocha
 $ git clone git://github.com/opscode-cookbooks/yum.git
 $ git clone git://github.com/opscode-cookbooks/build-essential.git
 $ git clone git://github.com/opscode-cookbooks/yum-epel.git
@@ -132,7 +132,7 @@ cookbook_path ["/home/vagrant/chef-repo/cookbooks"]
 最後に以下のコマンドを実行して，必要な環境を自動構築する．
 
 ```
-$ sudo chef-solo -c solo.rb -j ./localhost.json
+$ chef-solo -c solo.rb -j ./localhost.json
 ```
 
 以上で必要な環境構築は終了(2014.01.09現在)
