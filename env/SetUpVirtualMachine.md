@@ -112,7 +112,6 @@ $ mv -v chef-cabocha cabocha
 cabocha -> cabocha
 $ git clone git://github.com/opscode-cookbooks/yum.git
 $ git clone git://github.com/opscode-cookbooks/build-essential.git
-$ git clone git://github.com/opscode-cookbooks/yum.git
 $ git clone git://github.com/opscode-cookbooks/yum-epel.git
 $ git clone git://github.com/opscode-cookbooks/python.git
 ```
@@ -133,7 +132,7 @@ cookbook_path ["/home/vagrant/chef-repo/cookbooks"]
 最後に以下のコマンドを実行して，必要な環境を自動構築する．
 
 ```
-$ chef-solo -c solo.rb -j ./localhost.json
+$ sudo chef-solo -c solo.rb -j ./localhost.json
 ```
 
 以上で必要な環境構築は終了(2014.01.09現在)
